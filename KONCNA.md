@@ -18,7 +18,7 @@ Glavni cilji so bili:
 
 ### 2.1 Prenos in parsanje HTML vsebine
 
-Prenesel sem **21 GB** HTML vsebine, kar ustreza približno **305.000 člankom**. Zaradi visoke količine neuporabnih podatkov v vsakem HTML-ju (90 %), sem s pomočjo Python skripte (`html_to_json.py`) izločil relevantne informacije:
+Prenesel sem **21 GB** HTML vsebine, kar ustreza približno **305.000 člankom**. Zaradi visoke količine neuporabnih podatkov v vsakem HTML-ju (95 %), sem s pomočjo Python skripte (`html_to_json.py`) izločil relevantne informacije:
 
 - `title`: Naslov članka  
 - `author`: Avtor članka (če obstaja)  
@@ -40,7 +40,7 @@ Da bi zmanjšal počasno nesekvenčno branje iz diska, sem vse posamezne JSON da
 
 ## 3. Klasifikacija člankov po tematikah
 
-Za tematsko razvrstitev člankov sem uporabil Huggingface model [`cjvt/sloberta-trendi-topics`](https://huggingface.co/cjvt/sloberta-trendi-topics), ki dodeli verjetnosti za pripadnost vsakega članka eni izmed 13 kategorij.
+Za tematsko razvrstitev člankov sem uporabil Huggingface model `cjvt/sloberta-trendi-topics`, ki dodeli verjetnosti za pripadnost vsakega članka eni izmed 13 kategorij.
 
 Vsakemu članku sem dodal atribut `label_text`, ki vsebuje nabor ključev:
 
@@ -108,7 +108,7 @@ Na osnovi obdelanih podatkov sem pripravil **vizualizacijo oseb skozi čas**, kj
 - omogoči uporabo **normaliziranih imen** preko slovarja popravkov,
 - nastavi prikaz **N najbolj pogostih oseb** v grafu.
 
-Ta funkcionalnost je vključena v **Streamlit aplikacijo**, ki omogoča enostavno raziskovanje rezultatov.
+Ta funkcionalnost je vključena v **Streamlit aplikacijo**, ki omogoča enostavno raziskovanje rezultatov, dostopna pa je na povazavi 1kp3.com:8501.
 
 ## 7. Zaključek
 
@@ -124,7 +124,12 @@ Rezultat je **bogata baza strukturiranih slovenskih člankov**, pripravljena za 
 
 - `html_to_json.py` – skripta za pretvorbo HTML v JSON
 - `classla_server.py`, `classla_worker.py` – za porazdeljeno obdelavo entitet
-- `.ipynb` z analizo razlike med čiščenim in nečiščenim besedilom
-- `person_fix_dictionary.json` – slovar normalizacije oseb
-- `streamlit_app.py` – aplikacija za analizo in prikaz rezultatov
+- `testNER.ipynb` – z analizo razlike med čiščenim in nečiščenim besedilom
+- `pripravi_imenske_popravke.ipynb` – pomaga pri pripravi slovarja imenski_popravki.json
+- `popravi_datume.ipynb` – python notebook s katerim sem popravil datume
+- `Graf_osebe_skozi_cas.ipynb` – Primer analize pojavnosti oseb
+- `Graf_organizacije_skozi_cas.ipynb` – Primer analize pojavnosti organizacij
+- `Najpogostejsih_10_imen.ipynb` – Primerjava normaliziranih vs nenormaliziranih imen
+- `imenski_popravki.json` – slovar normalizacije oseb
+- `app.py` – aplikacija za analizo in prikaz rezultatov
 ```
