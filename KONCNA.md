@@ -130,6 +130,7 @@ Grafa sta si od let 2022 bolj kot ne vsporedna
 - `classla_server.py`, `classla_worker.py` – za porazdeljeno obdelavo entitet
 - `testNER.ipynb` – z analizo razlike med čiščenim in nečiščenim besedilom
 - `pripravi_imenske_popravke.ipynb` – pomaga pri pripravi slovarja imenski_popravki.json
+- `razdeli_clanke_po_kategorijah.py` – vsakemu clanku doloci eno izmed kategori
 - `popravi_datume.ipynb` – python notebook s katerim sem popravil datume
 - `Graf_osebe_skozi_cas.ipynb` – Primer analize pojavnosti oseb
 - `Najpogostejsih_10_imen.ipynb` – Primerjava normaliziranih vs nenormaliziranih imen
