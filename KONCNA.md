@@ -120,6 +120,10 @@ Projekt je zahteval veliko tehničnega znanja in potrpežljivosti. Največje izz
 
 Rezultat je **bogata baza strukturiranih slovenskih člankov**, pripravljena za nadaljnje raziskave in analize (npr. korelacija med osebami, analiza tematskih premikov ipd.).
 
+Kot ena zanimivost:
+![image](https://github.com/user-attachments/assets/201f3a3d-5a43-4d6f-8967-8239465ea18a)
+Grafa sta si od let 2022 bolj kot ne vsporedna
+
 ## 8. Priloge
 
 - `html_to_json.py` – skripta za pretvorbo HTML v JSON
@@ -128,7 +132,6 @@ Rezultat je **bogata baza strukturiranih slovenskih člankov**, pripravljena za 
 - `pripravi_imenske_popravke.ipynb` – pomaga pri pripravi slovarja imenski_popravki.json
 - `popravi_datume.ipynb` – python notebook s katerim sem popravil datume
 - `Graf_osebe_skozi_cas.ipynb` – Primer analize pojavnosti oseb
-- `Graf_organizacije_skozi_cas.ipynb` – Primer analize pojavnosti organizacij
 - `Najpogostejsih_10_imen.ipynb` – Primerjava normaliziranih vs nenormaliziranih imen
 - `imenski_popravki.json` – slovar normalizacije oseb
 - `app.py` – aplikacija za analizo in prikaz rezultatov
