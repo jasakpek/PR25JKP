@@ -108,7 +108,7 @@ Na osnovi obdelanih podatkov sem pripravil **vizualizacijo oseb skozi čas**, kj
 - omogoči uporabo **normaliziranih imen** preko slovarja popravkov,
 - nastavi prikaz **N najbolj pogostih oseb** v grafu.
 
-Ta funkcionalnost je vključena v **Streamlit aplikacijo**, ki omogoča enostavno raziskovanje rezultatov, dostopna pa je na povazavi 1kp3.com:8501.
+Ta funkcionalnost je vključena v **Streamlit aplikacijo**, ki omogoča enostavno raziskovanje rezultatov, dostopna pa je na povazavi 1kp3.com:8501. Ker je podatkov enostavno prevec za git sem se odlocil da streamlit aplikacijo hostam sam.
 
 ## 7. Zaključek
 
